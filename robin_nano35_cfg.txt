@@ -3,17 +3,21 @@
 
 >cfg_have_ups_device			0			# UPS(1:yes;0:no)
 
->cfg_print_over_auto_close		0			# auto-off when print finishes(1:yes£»0:no)
+#DELETED 
+#cfg_print_over_auto_close		0			# auto-off when print finishes(1:yes£»0:no)
+
+#NEW
+>cfg_power_control_flags		28			# bit mask: 1 - auto off, 2 - wait hotend, 4 - hadware as sofware, 8 - module presents, 16 - power module lock (0 - GND, 1 - VCC)
 
 >cfg_filament_det0_trigger_level	0			#the level signal of  outage detection E0 module (1:high level;0:low level)
 >cfg_filament_det1_trigger_level	0			#the level signal of  outage detection E1 module (1:high level;0:low level)
 
->cfg_filament_load_length		730			#the lenght to extrude filament (mm),Max:2000mm
->cfg_filament_load_speed		4000			#the speed to extrude filament(mm/min)
+>cfg_filament_load_length		850			#the lenght to extrude filament (mm),Max:2000mm
+>cfg_filament_load_speed		3000			#the speed to extrude filament(mm/min)
 >cfg_filament_load_limit_temperature	190			#It is the minimum temperature to extrude filament .
 
->cfg_filament_unload_length		730			#It is the minimum temperature to extrude filament .
->cfg_filament_unload_speed		4000			#the speed to retract filament(mm/min)
+>cfg_filament_unload_length		850			#It is the minimum temperature to extrude filament .
+>cfg_filament_unload_speed		3000			#the speed to retract filament(mm/min)
 >cfg_filament_unload_limit_temperature	190			#It is the minimum temperature to retract filament .
 
 #=========================== Bed Leveling   =============================
