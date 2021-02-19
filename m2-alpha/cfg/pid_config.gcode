@@ -1,3 +1,10 @@
-M303 E0 S250 C8 U
-M303 E-1 S90 C8 U
+;Show temperature statistics widget
+M117 SHUI M20 W1
+
+M117 SHUI M11 F6 
+M303 E0 S200 C5 U
+M117 SHUI M11 F6 
+M303 E-1 S60 C5 U
 M500
+M117 PID Finished
+
