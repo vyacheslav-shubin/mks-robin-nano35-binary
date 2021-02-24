@@ -44,7 +44,7 @@ M117 SHUI M4 S1 X0 Y1 Z1       ;Endstop passive level (S-1-MAX/0-MIN XYZ - 1/0 V
 M117 SHUI M4 S0 X1 Y0 Z1 
 
 
-M117 SHUI M5 X21 Y22 Z23 F1001	;Filament change point (X, Y, dZ, feedrate)    
+M117 SHUI M5 X21 Y22 Z23 E5 F1000	;Filament change point (X, Y, dZ, dE-retract feedrate)    
 
 M117 SHUI M2 S0 X20 Y20          ;set manual leveling point
 M117 SHUI M2 S1 X110 Y20
